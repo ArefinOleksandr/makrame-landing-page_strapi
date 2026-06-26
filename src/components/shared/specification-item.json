@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_specification_items",
+  "info": {
+    "displayName": "specification-item",
+    "icon": "landscape"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
