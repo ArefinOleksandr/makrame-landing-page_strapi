@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_order_page_qr_codes",
+  "info": {
+    "displayName": "QR Code",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "QR": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

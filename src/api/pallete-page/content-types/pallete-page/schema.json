@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "pallete_pages",
+  "info": {
+    "singularName": "pallete-page",
+    "pluralName": "pallete-pages",
+    "displayName": "Pallete Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Header": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "palettes_records": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::palettes-record.palettes-record"
+    }
+  }
+}

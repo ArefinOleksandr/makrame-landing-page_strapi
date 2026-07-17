@@ -1,5 +1,32 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface OrderPageQrCode extends Struct.ComponentSchema {
+  collectionName: 'components_order_page_qr_codes';
+  info: {
+    displayName: 'QR Code';
+    icon: 'dashboard';
+  };
+  attributes: {
+    QR: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Title: Schema.Attribute.String;
+  };
+}
+
+export interface OrderPageSocials extends Struct.ComponentSchema {
+  collectionName: 'components_order_page_socials';
+  info: {
+    displayName: 'Socials';
+    icon: 'envelop';
+  };
+  attributes: {
+    Content: Schema.Attribute.String;
+    Small_Icon: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    Title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedParagraph extends Struct.ComponentSchema {
   collectionName: 'components_shared_paragraphs';
   info: {
@@ -39,6 +66,8 @@ export interface SharedSpecificationItem extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'order-page.qr-code': OrderPageQrCode;
+      'order-page.socials': OrderPageSocials;
       'shared.paragraph': SharedParagraph;
       'shared.specification-group': SharedSpecificationGroup;
       'shared.specification-item': SharedSpecificationItem;

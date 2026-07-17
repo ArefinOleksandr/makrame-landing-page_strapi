@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_order_page_socials",
+  "info": {
+    "displayName": "Socials",
+    "icon": "envelop"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Small_Icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Content": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

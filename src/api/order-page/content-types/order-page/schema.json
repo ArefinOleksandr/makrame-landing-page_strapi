@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "order_pages",
+  "info": {
+    "singularName": "order-page",
+    "pluralName": "order-pages",
+    "displayName": "Order Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Header": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Content": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Contacts": {
+      "type": "dynamiczone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "components": [
+        "order-page.socials",
+        "order-page.qr-code"
+      ]
+    }
+  }
+}
